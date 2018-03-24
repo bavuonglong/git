@@ -5,6 +5,9 @@
 pwd
 mrdir projects
 
+## creat folder structure
+mrdir -p level1/level2/level3
+
 ## checking version
 git version
 
@@ -35,12 +38,24 @@ cat start.txt
 
 git add name_of_file
 
+git add .
+
 git commit -m "commit content"
+
+git commit -am "commit content"  => this command combines two commands into one, which is add and commit
 
 git push origin master
 
 
+## list down which files git is tracking
+git ls-files
 
+
+## delete folder/directory
+rm -rf folder_name
+
+## rename/move folder
+mv folder_name new_folder_name
 
 
 
@@ -49,21 +64,17 @@ vi name_of_file
 
 Hit the Esc key to enter "Command mode". Then you can type : to enter "Command-line mode". A colon (:) will appear at the bottom of the screen and you can type in one of the following commands. To execute a command, press the Enter key.
 
-:q to quit (short for :quit)
-
-:q! to quit without saving (short for :quit!)
-
-:wq to write and quit
-
-:wq! to write and quit even if file has only read permission (if file does not have write permission: force write)
-
-:x to write and quit (similar to :wq, but only write if there are changes)
-
-:exit to write and exit (same as :x)
-
-:qa to quit all (short for :quitall)
-
-:cq to quit without saving and make Vim return non-zero error (i.e. exit with error)
+ 
+| Key/Command | Description |
+| ----------- | ----------- |
+| :q | to quit (short for :quit) |
+| :q! |  to quit without saving (short for :quit!) |
+| :wq |  to write and quit |
+| :wq!  | to write and quit even if file has only read permission (if file does not have write permission: force write) |
+| :x  | to write and quit (similar to :wq, but only write if there are changes) |
+| :exit | to write and exit (same as :x) |
+| :qa | to quit all (short for :quitall) |
+| :cq | to quit without saving and make Vim return non-zero error (i.e. exit with error) |
 
 You can also exit Vim directly from "Command mode" by typing ZZ to save and quit (same as :x) or ZQ to just quit (same as :q!). (Note that case is important here. ZZ and zz do not mean the same thing.)
 
