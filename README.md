@@ -30,6 +30,22 @@
 | git log -- file_name|  showing history of specific file|
 | git show commitId|  showing detail of a commit by commit id|
 
+### git comparison
+
+| Key/Command | Description |
+| ----------- | ----------- |
+| git diff | compare the difference between working directory and staging area |
+| git diff file_name| compare the difference between working directory and staging area for specific file |
+| git diff commitId1 commitId2| compare the difference between working directory and staging area between two commits |
+| git diff HEAD HEAD^| compare the difference between working directory and staging area between last commit and the previous commit of last commit |
+| git difftool | compare the difference between working directory and staging area by using external diff tool|
+| git diff HEAD | compare the difference between working directory and local repository |
+| git difftool HEAD | compare the difference between working directory and local repository by using external diff tool|
+| git diff --staged HEAD | compare the difference between staging area and local repository|
+| git difftool --staged HEAD | compare the difference between staging area and local repository by using external diff tool|
+| git diff master origin/master | compare the difference between local repository and remote repository|
+
+
 ### git alias
 
 | Key/Command | Description |
