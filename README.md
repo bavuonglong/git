@@ -5,16 +5,16 @@
 pwd
 mrdir projects
 
-##checking version
+## checking version
 git version
 
-##getting
+## getting
 git config user.name
 git config user.email
 git config --list
 sudo nano ~/.gitconfig
 
-##setting
+## setting
 git config --global user.name "Cuong Ngo"
 git config --global user.emal "your@email.com"
 
@@ -22,10 +22,10 @@ git clone "url"
 
 git status
 
-##creat and add content to a file
+## creat and add content to a file
 echo "Test git quick start demo" >> start.txt
 
-##see the content of file
+## see the content of file
 cat start.txt
 
 
