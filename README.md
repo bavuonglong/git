@@ -1,6 +1,6 @@
 # git
 
-## git commands
+## git commands basic
 
 | Key/Command | Description |
 | ----------- | ----------- |
@@ -24,7 +24,26 @@
 | git push origin master | push local changes to remote repository |
 | git ls-files | listing all files which git is tracking |
 | git mv old_file_name new_file_name |  move/rename file and inform git that this is move/rename action |
+| git log |  showing history |
+| git log --abbrev-commit|  showing history with concise commit hash value|
+| git log --oneline --graph --decorate|  showing history with more option|
+| git log -- file_name|  showing history of specific file|
+| git show commitId|  showing detail of a commit by commit id|
 
+### git alias
+
+| Key/Command | Description |
+| ----------- | ----------- |
+| git config --global alias.hist "log --all --graph --decorate --oneline" | creat alias command, long to short |
+
+
+### git ignore pattern
+
+| Key/Command | Description |
+| ----------- | ----------- |
+| MyFile.txt | specific type |
+| *.txt | file pattern |
+| my-folder/ | folder |
 
 ## bash commands
 
