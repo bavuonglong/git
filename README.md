@@ -15,12 +15,15 @@
 | git status | showing status of files |
 | git add name_of_file | add specific file to staging area (pre-commit holding area) |
 | git add . | add all new files, including recursing file to stating area |
+| git add -A | combine the action delete and creat new into rename/move action when, in fact, we're doing renaming or moving file |
+| git reset HEAD file_name | un-staged file_name, reverse the action of add command |
+| git checkout -- file_name | revert file to previous stage, the stage before making change |
 | git commit -m "commit content" | commit changes |
 | git commit -am "commit content" | combine two commands into one, which are add and commit |
 | git pull | pull new things from remote repository |
 | git push origin master | push local changes to remote repository |
 | git ls-files | listing all files which git is tracking |
-| :cq | to quit without saving and make Vim return non-zero error (i.e. exit with error) |
+| git mv old_file_name new_file_name |  move/rename file and inform git that this is move/rename action |
 
 
 ## bash commands
@@ -32,7 +35,8 @@
 | mrdir -p level1/level2/level3 |  creating recursing folder |
 | echo "Test git quick start demo" >> start.txt  | creating new file and add content for it |
 | cat start.txt | showing content file |
-| rm -rf folder_name | delete folder/directory |
+| rm file_name | delete filename |
+| rm -rf folder_name | delete folder/directory and its sub folders, files inside those folders, r stands for recursion, f stands for force option |
 | mv folder_name new_folder_name | moving/renaming folder |
 
 ## Vim editor
