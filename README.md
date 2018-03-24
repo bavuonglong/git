@@ -1,66 +1,46 @@
 # git
 
+## git commands
+
+| Key/Command | Description |
+| ----------- | ----------- |
+| git version | checking version |
+| git config user.name |  getting username |
+| git config user.email |  getting user's email |
+| git config --list  | showing all configuration |
+| sudo nano ~/.gitconfig  | showing and editing configuration from .gitconfig file |
+| git config --global user.name "Cuong Ngo" | setting username |
+| git config --global user.emal "vancuongngo.93@gmail.com" | setting user's email |
+| git clone "url" | clone remote repository to local |
+| git status | showing status of files |
+| git add name_of_file | add specific file to staging area (pre-commit holding area) |
+| git add . | add all new files, including recursing file to stating area |
+| git commit -m "commit content" | commit changes |
+| git commit -am "commit content" | combine two commands into one, which are add and commit |
+| git pull | pull new things from remote repository |
+| git push origin master | push local changes to remote repository |
+| git ls-files | listing all files which git is tracking |
+| :cq | to quit without saving and make Vim return non-zero error (i.e. exit with error) |
 
 
-pwd
-mrdir projects
+## bash commands
 
-## creat folder structure
-mrdir -p level1/level2/level3
-
-## checking version
-git version
-
-## getting
-git config user.name
-
-git config user.email
-
-git config --list
-
-sudo nano ~/.gitconfig
-
-## setting
-git config --global user.name "Cuong Ngo"
-
-git config --global user.emal "your@email.com"
-
-git clone "url"
-
-git status
-
-## creat and add content to a file
-echo "Test git quick start demo" >> start.txt
-
-## see the content of file
-cat start.txt
-
-
-git add name_of_file
-
-git add .
-
-git commit -m "commit content"
-
-git commit -am "commit content"  => this command combines two commands into one, which is add and commit
-
-git push origin master
-
-
-## list down which files git is tracking
-git ls-files
-
-
-## delete folder/directory
-rm -rf folder_name
-
-## rename/move folder
-mv folder_name new_folder_name
-
-
+| Key/Command | Description |
+| ----------- | ----------- |
+| pwd | showing the current directory |
+| mrdir folder_name |  creating foler_name |
+| mrdir -p level1/level2/level3 |  creating recursing folder |
+| echo "Test git quick start demo" >> start.txt  | creating new file and add content for it |
+| cat start.txt | showing content file |
+| rm -rf folder_name | delete folder/directory |
+| mv folder_name new_folder_name | moving/renaming folder |
 
 ## Vim editor
-vi name_of_file
+
+| Key/Command | Description |
+| ----------- | ----------- |
+| vi name_of_file | create new file and open by vim editor |
+
 
 Hit the Esc key to enter "Command mode". Then you can type : to enter "Command-line mode". A colon (:) will appear at the bottom of the screen and you can type in one of the following commands. To execute a command, press the Enter key.
 
