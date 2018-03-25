@@ -102,6 +102,11 @@ Pull with rebase: when we have some changes in remote repository, and we want to
 | git stash drop | Dropping last stash |
 | git stash -u | Stash any changes, include un-tracked files |
 | git stash pop | Apply stash and drop that stash, combination of `apply` and `drop` |
+| git stash save "message" | Stash with specific message |
+| git stash show stash@{1} | Showing detail of stash number 1 |
+| git stash apply stash@{1} | Applying specific stash |
+| git stash drop stash@{1} | Dropping specific stash |
+| git stash clear | Clearing all stashes |
 
 
 ### git alias
