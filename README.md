@@ -107,6 +107,7 @@ Pull with rebase: when we have some changes in remote repository, and we want to
 | git stash apply stash@{1} | Applying specific stash |
 | git stash drop stash@{1} | Dropping specific stash |
 | git stash clear | Clearing all stashes |
+| git stash branch branch_name | Popping stash to new branch |
 
 
 ### git alias
