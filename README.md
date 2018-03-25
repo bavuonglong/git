@@ -70,13 +70,19 @@
 | git branch -d branch_name | delete a branch |
 | git checkout -b branch_name | switch to a new branch |
 
+* fast-forward is posible if it has no chances in master branch during the time when we switch and work on feature branch.
+
 ### git merge conflict
 
-After switch to master branch and execute `git merge feature_branch`, in case it has confliction, it will inform we have conflict, and are being on merging stage, we need to resolve conflict by:
+After switch to master branch and execute `git merge feature_branch`, in case it has conflict, it will inform we have conflict, and are being on merging stage, we need to resolve conflict by:
 1. git mergetool
 2. git commit -m "merge conflict message"
 
-* fast-forward is posible if it has no chances in master branch during the time when we switch and work on feature branch.
+### git rebase
+
+When we do rebase, it will rewind the changes happen on feature branch, playback the changes on master (source branch) on feature branch, and then apply the changes happen on feature branch. Rebase also allow us to do fast-forward merge when we're done making change on feature branch.
+
+`git rebase master`
 
 ### git alias
 
