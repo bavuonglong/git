@@ -86,6 +86,13 @@ When we do rebase, it will rewind the changes happen on feature branch, playback
 
 In conflict case when doing rebase, if we want to abort the rebase process, use: `git rebase --abort`
 
+To resolve conflict, we use `git mergetool`
+
+To continue rebase, we use `git rebase --continue`
+
+Pull with rebase: when we have some changes in remote repository, and we want to rebase those change into local repository, we use: `git pull --rebase origin master`, before that, we can fetch the changes before pull to verify the status, by using `git fetch origin master`
+
+
 
 ### git alias
 
