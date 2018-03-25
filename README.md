@@ -92,6 +92,14 @@ To continue rebase, we use `git rebase --continue`
 
 Pull with rebase: when we have some changes in remote repository, and we want to rebase those change into local repository, we use: `git pull --rebase origin master`, before that, we can fetch the changes before pull to verify the status, by using `git fetch origin master`
 
+### git stash
+
+| Key/Command | Description |
+| ----------- | ----------- |
+| git stash | Saving the changes in working directory without inform git there are modified files |
+| git stash apply | Un-stash |
+| git stash list | Showing all stashes |
+| git stash drop | Dropping last stash |
 
 
 ### git alias
