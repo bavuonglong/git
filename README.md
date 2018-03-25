@@ -30,6 +30,15 @@
 | git log -- file_name|  showing history of specific file|
 | git show commitId|  showing detail of a commit by commit id|
 
+
+### git commit
+
+| Key/Command | Description |
+| ----------- | ----------- |
+| git commit --amend | changing the commit message of last commit|
+| git rebase -i HEAD~n | using rebase in interactive mode to pick, reword, edit, squash, fixup commits; then we have to use force push|
+
+
 ### git comparison
 
 | Key/Command | Description |
@@ -109,6 +118,23 @@ Pull with rebase: when we have some changes in remote repository, and we want to
 | git stash clear | Clearing all stashes |
 | git stash branch branch_name | Popping stash to new branch |
 
+
+### git tag
+
+| Key/Command | Description |
+| ----------- | ----------- |
+| git tag tag_name | Putting a tag with tag_name |
+| git tag tag_name -m "tag message"| Putting a tag with tag_name and tag_message|
+| git tag --list | Showing all tags |
+| git show tag_name | Showing commit that adds that tag |
+| git tag --delete tag_name | Deleting specific tag |
+| git tag -a tag_name | Creating an annotated tag, which contains more information via commit message when tagging |
+| git diff tag1 tag2 | Comparing the difference between two tags |
+| git tag -a tag_name commit_id | Tagging specific commit |
+| git tag -a tag_name -f commit_id | Moving tag to specific commit |
+| git push tag_name | Pushing specific tag_name to remote repo |
+| git push origin branch_name --tags | Pushing all the tags to remote repo |
+| git push origin :tag_name | Deleting specific tag on remote repo |
 
 ### git alias
 
