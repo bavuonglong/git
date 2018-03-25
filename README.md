@@ -84,6 +84,9 @@ When we do rebase, it will rewind the changes happen on feature branch, playback
 
 `git rebase master`
 
+In conflict case when doing rebase, if we want to abort the rebase process, use: `git rebase --abort`
+
+
 ### git alias
 
 | Key/Command | Description |
