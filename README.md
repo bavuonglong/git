@@ -46,6 +46,38 @@
 | git diff master origin/master | compare the difference between local repository and remote repository|
 
 
+### git branch
+
+| Key/Command | Description |
+| ----------- | ----------- |
+| git branch -a | show all branch |
+| git branch branch_name | create new branch |
+| git checkout branch_name | switch to a branch |
+| git branch -m old_branch_name new_branch_name | rename a branch |
+| git branch -d branch_name | delete a branch |
+| git checkout -b branch_name | switch to a new branch |
+
+### git merge
+
+| Key/Command | Description |
+| ----------- | ----------- |
+| git merge branch_name | merge branch_name into the branch we're being on with fast-forward default option|
+| git merge branch_name --no-ff| merge branch_name into the branch we're being on with out fast-forward|
+| git merge branch_name -m "merge message"| automatic merge |
+| git branch branch_name | create new branch |
+| git checkout branch_name | switch to a branch |
+| git branch -m old_branch_name new_branch_name | rename a branch |
+| git branch -d branch_name | delete a branch |
+| git checkout -b branch_name | switch to a new branch |
+
+### git merge conflict
+
+After switch to master branch and execute `git merge feature_branch`, in case it has confliction, it will inform we have conflict, and are being on merging stage, we need to resolve conflict by:
+1. git mergetool
+2. git commit -m "merge conflict message"
+
+* fast-forward is posible if it has no chances in master branch during the time when we switch and work on feature branch.
+
 ### git alias
 
 | Key/Command | Description |
